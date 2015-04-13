@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Agenda de Contatos PhoneGap</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
+        
+        <script>
+	        
+	        document.addEventListener("deviceready", findContacts, false);
+	        
+	        function onError(contactError) {
+		        alert('onError!');
+		    }
+         	
+         	function onSuccess(contacts) {
+		        var txt = ""; 
+		        var cel = "";
+		        for (var i=0; i<contacts.length; i++) {	
+		            txt= txt + " -" + contacts[i].displayName;
+		            document.getElementById("retornoUm").innerHTML = "Nome: " + txt;
+		            for (var j=0; j<contacts[i].phoneNumbers.length; j++) {
+		            	cel= cel + " -" + contacts[i].phoneNumbers[j].value;
+		            	document.getElementById("retornoDois").innerHTML = "Celular: " + cel;
+		        	}
+		        }
+		    }
+		    
+        	function findContacts()
+			{
+					
+		        var options = new ContactFindOptions();
+				
+				options.multiple=true;     
+				filter = ["displayName","phoneNumbers"];   
+		      	navigator.contacts.find(filter, onSuccess, onError, options);
+						
+			}
+
+		</script>
+
+    </head>
+    <body>
+    	<div id="all">
+	    	<div id="title">
+	    		<h3>Agenda de Contatos (PhoneGap)</h2>
+	        </div>
+	        <div id="body">
+	        	<br>
+	        	<br>
+	        	<a href="addContact.html">Adicionar</a>
+	        	<br>
+				<p id="retornoUm"></p>
+				<p id="retornoDois"></p>
+	        </div>
+        </div>
+	</body>
+</html>
