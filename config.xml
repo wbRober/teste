@@ -16,6 +16,7 @@
         Robert Rodrigues 
     </author>
 	
+	<preference name="permissions" value="none"/>
 	<preference name="fullscreen" value="true" />
 
 </widget>

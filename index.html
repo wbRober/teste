@@ -3,7 +3,7 @@
     <head>
         <title>Agenda de Contatos PhoneGap</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/layout.css">
         <script src="js/js.js"></script>
         <script src="phonegap.js"></script>
         
@@ -20,21 +20,14 @@
 
     </head>
     <body>
-    	<div id="all">
-	    	<div id="title">
-	    		<h3>AppTeste</h2>
-	        </div>
-	        <div id="body">
-	        	<br>
-	        	<br>
-	        		Teste
-	        	<br>
-				<input type="text" id="local">
-	        </div>
-        </div>
-        <script>
-			on();
-			master2("body","start");
-		</script>
+	    <header>
+			<h3>AppTeste</h2>
+		</header>
+		<section>
+			<input type="button" value="Inicio" onClick="on(); master2('body','start');"><input type="text" id="local">
+            <article id="body">
+            	
+            </article>
+		</section>
 	</body>
 </html>
