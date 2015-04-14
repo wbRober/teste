@@ -2,58 +2,37 @@
 <html>
     <head>
         <title>Agenda de Contatos PhoneGap</title>
-        
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <script src="phonegap.js"></script>
         
         <script>
-	        
-	        document.addEventListener("deviceready", findContacts, false);
-	        
-	        function onError(contactError) {
-		        alert('onError!');
-		    }
-         	
-         	function onSuccess(contacts) {
-		        var txt = ""; 
-		        var cel = "";
-		        for (var i=0; i<contacts.length; i++) {	
-		            txt= txt + " -" + contacts[i].displayName;
-		            document.getElementById("retornoUm").innerHTML = "Nome: " + txt;
-		            for (var j=0; j<contacts[i].phoneNumbers.length; j++) {
-		            	cel= cel + " -" + contacts[i].phoneNumbers[j].value;
-		            	document.getElementById("retornoDois").innerHTML = "Celular: " + cel;
-		        	}
-		        }
-		    }
-		    
-        	function findContacts()
-			{
-					
-		        var options = new ContactFindOptions();
-				
-				options.multiple=true;     
-				filter = ["displayName","phoneNumbers"];   
-		      	navigator.contacts.find(filter, onSuccess, onError, options);
-						
+        	confirm("Teste");
+			function on(){
+				if(window.localStorage){
+					document.getElementById("local").value = "Local is ok";
+				}if(!window.localStorage){
+					document.getElementById("local").value = "Local no ok";
+				}
 			}
-
-		</script>
+        </script>
 
     </head>
     <body>
     	<div id="all">
 	    	<div id="title">
-	    		<h3>Agenda de Contatos (PhoneGap)</h2>
+	    		<h3>AppTeste</h2>
 	        </div>
 	        <div id="body">
 	        	<br>
 	        	<br>
-	        	<a href="addContact.html">Adicionar</a>
+	        		Teste
 	        	<br>
-				<p id="retornoUm"></p>
-				<p id="retornoDois"></p>
+				<input type="text" id="local">
 	        </div>
         </div>
+        <script>
+			on();
+		</script>
 	</body>
 </html>
