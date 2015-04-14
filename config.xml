@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.rbt.teste"
-        versionCode = "10" 
-        version     = "1.0.2" >
+        id          = "com.rbt.teste" 
+        version     = "1.0.4" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -16,5 +15,7 @@
     <author href="https://robertrodrigues.zz.vc" email="wb_robert@hotmail.com">
         Robert Rodrigues 
     </author>
+	
+	<preference name="fullscreen" value="true" />
 
 </widget>
