@@ -64,9 +64,9 @@
 	<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
 	<!--<gap:plugin name="Storage" value="org.apache.cordova.Storage" />-->
 	
-	<!--<gap:plugin name="BarcodeScanner" /> <!-- latest release -->
-	<!--<gap:plugin name="Analytics" /> <!-- latest release -->
-	<!--<gap:plugin name="GenericPush" /> <!-- latest release -->
+	<!--<gap:plugin name="BarcodeScanner" /> -->
+	<!--<gap:plugin name="Analytics" /> -->
+	<!--<gap:plugin name="GenericPush" /> -->
 	
 	<access origin="*" />
 
