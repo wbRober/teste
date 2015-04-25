@@ -46,23 +46,23 @@
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"     gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />-->
 	
-	<gap:plugin name="Accelerometer" value="org.apache.cordova.AccelListener" />
-	<gap:plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
-	<gap:plugin name="Capture" value="org.apache.cordova.Capture"/>
-	<gap:plugin name="Compass" value="org.apache.cordova.CompassListener" />
-	<gap:plugin name="Contacts" value="org.apache.cordova.ContactManager" />
-	<gap:plugin name="Device" value="org.apache.cordova.Device" />
+	<!--<gap:plugin name="Accelerometer" value="org.apache.cordova.AccelListener" />-->
+	<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+	<gap:plugin name="org.apache.cordova.media-capture" version="0.3.3" />
+	<!--<gap:plugin name="Compass" value="org.apache.cordova.CompassListener" />-->
+	<gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />
+	<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
 	<gap:plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager" />	
-	<gap:plugin name="Battery" value="org.apache.cordova.BatteryListener" />
-	<gap:plugin name="File" value="org.apache.cordova.FileUtils" />
-	<gap:plugin name="FileTransfer" value="org.apache.cordova.FileTransfer" />
-	<gap:plugin name="Geolocation" value="org.apache.cordova.GeoBroker" />
-	<gap:plugin name="Globalization" value="org.apache.cordova.Globalization" />	
-	<gap:plugin name="Media" value="org.apache.cordova.AudioHandler" />
-	<gap:plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
-	<gap:plugin name="Notification" value="org.apache.cordova.Notification"/>
-	<gap:plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
-	<gap:plugin name="Storage" value="org.apache.cordova.Storage" />
+	<!--<gap:plugin name="org.apache.cordova.battery-status" version="0.2.11" />-->
+	<gap:plugin name="org.apache.cordova.file" version="1.3.1" />
+	<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
+	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+	<gap:plugin name="org.apache.cordova.globalization" version="0.3.1" />	
+	<gap:plugin name="org.apache.cordova.media" version="0.2.13" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+	<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+	<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+	<!--<gap:plugin name="Storage" value="org.apache.cordova.Storage" />-->
 	
 	<gap:plugin name="BarcodeScanner" /> <!-- latest release -->
 	<gap:plugin name="Analytics" /> <!-- latest release -->
