@@ -52,8 +52,8 @@
 	<!--<gap:plugin name="Compass" value="org.apache.cordova.CompassListener" />-->
 	<gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />
 	<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
-	<gap:plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager" />	
-	<!--<gap:plugin name="org.apache.cordova.battery-status" version="0.2.11" />-->
+	<!--<gap:plugin name="NetworkStatus" value="org.apache.cordova.NetworkManager" />-->	
+	<gap:plugin name="org.apache.cordova.battery-status" version="0.2.11" />
 	<gap:plugin name="org.apache.cordova.file" version="1.3.1" />
 	<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
 	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
